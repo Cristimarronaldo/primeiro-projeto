@@ -1,5 +1,11 @@
 <p>
-  cursos component!
+  Lista de pesquisa da google {{ nomePortal }}
 </p>
 
 <app-cursos-detalhe></app-cursos-detalhe>
+
+<ul>
+  <li *ngFor="let curso of cursos">
+    {{ curso }}
+  </li>
+</ul>
